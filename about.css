@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 20px;
+    text-align: center;
+}
+
+div {
+    display: flex;
+    margin: 0 0 20px;
+}
+
+div p {
+    padding: 20px;
+}
