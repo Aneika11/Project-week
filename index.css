@@ -21,6 +21,23 @@ header {
     text-align: center;
 }
 
-.homepage-box-1 {
-    
+.homepage-boxes {
+    display: flex;
+    flex-direction: row;
+}
+
+.homepage-boxes div h2 {
+    text-align: center;
+}
+
+.homepage-boxes div {
+    padding: 20px;
+}
+
+main {
+    padding: 30px;
+}
+
+main div {
+    margin: 20px 0;
 }
