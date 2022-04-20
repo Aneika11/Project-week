@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
 }
-
 form {
     display: flex;
     flex-direction: column;
@@ -19,6 +18,11 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    height:400px;
+    background: url("https://storage.googleapis.com/tandem-private-attachments/attachments/8bf63a67-9de8-4a32-9c00-4d933ff44a40/1650477650_original.jfif?GoogleAccessId=bigquery@tandem-276521.iam.gserviceaccount.com&Expires=1650564069&Signature=PmsTYMdFXZAxYNRpHkX3qWixevXQy6XZ2xZdcnOQYUxOL0OZTIqN%2FaUAUv0MS6gm%2FkEsnBMjgcOs0qPQBhVpzXL%2BCgvRsKulrMDW0EpGSSZg6cTlbI8aXUZk0x%2BmpvC4ViD7%2FWUxRoVm0Z%2FYkepjZTRqDvJHSym76h5cmyvDvRn8itcA1FvG9cFu%2Fj0UvTDog8kEo4B3xfnlF4rrMxL56I0xgzx0NQsLu31BbENKIVEGE3VI3GDP%2Bcdax7RgUUFakxQ6Ys9Njv0NQRv%2BTEnBo60a1Vo%2BBm8nikk0YBltMWkBqb21Bfj2Cy7l8nqF%2BS6iXSDMvjaBgtNLdIijKBLyFA%3D%3D")no-repeat fixed center;
+    background-size: contain, cover;
+
+    
 }
 
 .homepage-boxes {
@@ -40,4 +44,12 @@ main {
 
 main div {
     margin: 20px 0;
+}
+@media (max-width:800px){
+    #homepage-box-1{
+        flex-direction:column;
+    }
+    #homepage-box-2{
+        flex-direction:column-reverse;
+    }
 }
