@@ -54,3 +54,8 @@ form input[value="DONATE"] {
 .third-org {
     background-color: grey;
 }
+form {
+    
+    background-color: white;
+    margin-left: 20px;
+}
