@@ -12,3 +12,16 @@ header h1{
     background-color: rgba(56, 56, 56,.8);
     padding: 5px;
 }
+#section-one{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+}
+#video{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+@media (min-width: 500px){
+
+}
