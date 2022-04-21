@@ -1,0 +1,50 @@
+*{
+    margin:0;
+}
+
+header{
+    text-align: center;
+}
+
+
+figure{   
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    
+}
+figure div{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+figure div img{
+    width:700px;
+    margin:30px;
+}
+figure div p{
+    width:500px;
+}
+
+section{
+    margin: auto;
+    display: grid;
+}
+#journey-grid{
+    margin: auto;
+    grid-gap: 10px;
+    grid-template-rows: repeat(5,1fr);
+    
+}
+section div div img{
+    width:300px;
+}
+section div div p{
+    padding: 20px;
+    width:600px;
+}
+section div div{
+    display: flex;
+    margin: 20px;
+}
