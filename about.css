@@ -11,12 +11,46 @@ h2 {
 div {
     display: flex;
     margin: 0 0 20px;
+    padding: 50px;
 }
 
 div p {
     padding: 20px;
+    font-size: 20px;
+    margin-left: 20px;
+    background-color: white;
 }
 
 img {
+    width: 500px;
     border: 2px solid red;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+form input, form label {
+    margin-bottom: 10px;
+}
+
+form input[value="DONATE"] {
+    background-color: gold;
+    border: none;
+    border-radius: 3px;
+    padding: 4px;
+}
+
+.first-org {
+    background-color: grey;
+}
+
+.second-org {
+    background-color: grey;
+}
+
+.third-org {
+    background-color: grey;
 }
