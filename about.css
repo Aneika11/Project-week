@@ -16,3 +16,7 @@ div {
 div p {
     padding: 20px;
 }
+
+img {
+    border: 2px solid red;
+}
