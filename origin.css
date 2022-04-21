@@ -1,0 +1,95 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+nav {
+    background-color: grey;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+nav ul li a{
+    color: black;
+    text-decoration:none; 
+    font-size: 15px;
+}
+nav ul li a:hover{
+    font-size:18px;
+
+}
+header{
+    align-content:center;
+}
+.img1{
+    height: 400px;
+    width: 1520px;
+}
+footer {
+    background-color: grey;
+    padding: 20px;
+}
+
+footer ul{
+    list-style: none;
+}
+.side{
+  margin: -220px 0px 150px 100px;
+}
+
+.video{
+   margin-left:900px;
+  
+}
+.stories{
+    background-color: #E8F0F5;
+    width: 350px;
+    height: auto;
+    padding: 20px;
+    font-family: cursive;
+}
+.videoGalley .heading{
+    font-size: 3rem;
+    margin:2rem 0;
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+    text-align:center;
+   
+}
+.video-container{
+    display: flex;
+    justify-content:flex-end;
+    flex-wrap:wrap;
+    width: 100%;
+}
+.video-container .video{
+   
+    height: 15em;
+    
+    width: 25em;
+    margin:2rem;
+    box-shadow:0 .5rem 1rem;
+    
+}
+.video-container iframe{
+    display:flex;
+    flex-direction:row;
+    height: 15em;
+    width: 25em;
+    margin:2rem;
+    box-shadow:0 .5rem 1rem;
+    
+}
+    
+
