@@ -6,7 +6,7 @@
 body nav {
     position: sticky !important;
     top: 0;
-    
+    font-family: 'Oswald', sans-serif;
 }
 
 #navbarNavDropdown{
