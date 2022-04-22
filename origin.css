@@ -38,7 +38,7 @@ header {
 
 .img1 {
     height: 420px;
-    width: 1520px;
+    width: 100%;
     
 }
 
@@ -57,7 +57,6 @@ footer ul {
 
 .video {
     margin-left: 900px;
-
 }
 
 .stories {
@@ -71,6 +70,8 @@ footer ul {
 .videoGalley {
     background-color: white;
     text-align: center;
+    width:100%;
+    margin:0 auto;
     /* position: relative; */
     /* bottom: 1300px; */
     
@@ -83,16 +84,13 @@ footer ul {
     border: 1px solid black;
      box-shadow: 0 .5rem 1rem;
      background-color: #E8F0F5;
-     width: 1000px;
-     margin-left: 100px;
 }
 
 .video-container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     flex-wrap: wrap;
-    width: 80%;
-    height: 400px;
+    width: 100%;
 }
 
 .video-container .video {
@@ -121,11 +119,9 @@ footer ul {
 .table{
     display: flex;
     flex-direction:column;
-    height: 371px;
-    margin-top: -550px;
+    align-items:flex-end;
     text-align: center;
-    margin-left: 150px;
-    margin-bottom: 300px;
+    
 }
 /* .push {
     text-align: left;
@@ -133,8 +129,9 @@ footer ul {
     
 }*/
 .img2{
-    width: 65%;
-   height: 500px;
+    width: 700px;
     
 }
-
+#holder{
+    margin-right:40px;
+}
