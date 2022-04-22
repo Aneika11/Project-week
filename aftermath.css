@@ -12,3 +12,22 @@ header h1{
     background-color: rgba(56, 56, 56,.8);
     padding: 5px;
 }
+section{
+    display: flex;
+    justify-content:center;
+}
+#section-one{
+    margin:20px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    grid-gap:20px;
+}
+#video{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+@media (min-width: 500px){
+
+}
