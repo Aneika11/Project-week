@@ -3,10 +3,30 @@ h2 {
     text-align: center;
 }
 
+#nav {
+    background-color: blue !important;
+}
+
 .Dbox {
     display: flex;
-    margin: 0 0 20px;
     padding: 50px;
+    width: 90%;
+    margin: 0 auto 50px;
+}
+
+.Dbox:hover {
+    animation: example 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes example {
+    from {box-shadow: 0px 0px;
+        color: #B31942;
+    }
+    to {box-shadow: 10px 15px 5px;
+        color: grey;
+        width: 89.5%;
+    }
 }
 
 div p {
@@ -16,12 +36,18 @@ div p {
     background-color: white;
 }
 
+.Dbox p {
+    background-color: #0A3161 !important;
+    color: white;
+}
+
 img {
     width: 500px;
-    border: 2px solid red;
 }
 
 form {
+    color: white;
+    background-color: #0A3161 !important;
     display: flex;
     flex-direction: column;
     align-items: center
@@ -39,15 +65,15 @@ form input[value="DONATE"] {
 }
 
 .first-org {
-    background-color: grey;
+    background-color: #B31942;
 }
 
 .second-org {
-    background-color: grey;
+    background-color: #B31942;
 }
 
 .third-org {
-    background-color: grey;
+    background-color: #B31942;
 }
 form {
     
