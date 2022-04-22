@@ -3,7 +3,7 @@ h2 {
     text-align: center;
 }
 
-div {
+.Dbox {
     display: flex;
     margin: 0 0 20px;
     padding: 50px;
