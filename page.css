@@ -7,6 +7,16 @@ header {
     align-content: center;
 }
 
+body{
+    background-color: #5A5D60;
+}
+#nav{
+    background-color:#340A0A !important;
+    color:white;
+}
+footer{
+    background-color: #250707;
+}
 .img1 {
     height: 420px;
     width: 100%;
@@ -22,7 +32,9 @@ header {
 }
 
 .stories {
-    background-color: #E8F0F5;
+    color:white;
+    background: rgb(26,84,120);
+background: linear-gradient(90deg, rgba(26,84,120,1) 0%, rgba(0,0,0,1) 36%, rgba(87,16,16,1) 86%);
     width: 450px;
     height: auto;
     padding: 20px;
