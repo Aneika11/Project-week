@@ -1,12 +1,57 @@
-h2 {
-    margin: 20px;
+.heading {
     text-align: center;
+}
+
+.heading-image {
+    width: 250px;
+    margin: 0 0 40px;
+    border: 5px solid black;
+}
+
+h2 {
+    color: black;
+    background-color: white;
+    width: 80%;
+    margin: 50px auto 0 !important;
+    
+}
+
+body {
+    background-image: url(https://media.istockphoto.com/photos/manhattan-bridge-nyc-picture-id624265498?k=20&m=624265498&s=612x612&w=0&h=mtr1mY83fgpgpWTRgEBJI8DxrmATfuQbh9VMDCiFzJM=);
+    background-size: contain;
+}
+
+#nav {
+    background-color: #3b7bff !important;
+    z-index: 5;
 }
 
 .Dbox {
     display: flex;
-    margin: 0 0 20px;
     padding: 50px;
+    width: 90%;
+    margin: 0 auto 50px;
+    position: relative;
+    opacity: 0.95;
+}
+
+.Dbox:hover {
+    animation: example 0.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes example {
+    from {box-shadow: 0px 0px;
+        color: #B31942;
+        bottom: 0;
+        right: 0;
+    }
+    to {box-shadow: 10px 15px;
+        color: black;
+        bottom: 10px;
+        right: 10px;
+        
+    }
 }
 
 div p {
@@ -16,12 +61,18 @@ div p {
     background-color: white;
 }
 
+.Dbox p {
+    background-color: #0A3161 !important;
+    color: white;
+}
+
 img {
     width: 500px;
-    border: 2px solid red;
 }
 
 form {
+    color: white;
+    background-color: #0A3161 !important;
     display: flex;
     flex-direction: column;
     align-items: center
@@ -38,24 +89,16 @@ form input[value="DONATE"] {
     padding: 4px;
 }
 
-.first-org {
-    background-color: grey;
+.first-org, .second-org, .third-org {
+    background-color: #B31942;
 }
 
-.second-org {
-    background-color: grey;
-}
-
-.third-org {
-    background-color: grey;
-}
 form {
-    
     background-color: white;
     margin-left: 20px;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1200px) {
     div {
         flex-direction: column;
         align-items: center;
@@ -71,5 +114,6 @@ form {
     
     img {
         width: 90%;
+        margin: 10px;
     }
 }
