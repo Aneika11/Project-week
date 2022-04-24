@@ -36,7 +36,7 @@ body {
 }
 
 .Dbox:hover {
-    animation: example 0.5s;
+    animation: example 0.2s;
     animation-fill-mode: forwards;
 }
 
