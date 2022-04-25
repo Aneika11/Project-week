@@ -6,13 +6,16 @@
     width: 250px;
     margin: 0 0 40px;
     border: 5px solid black;
+    position: relative;
+    bottom: 5px;
 }
 
 h2 {
     color: black;
     background-color: white;
-    width: 80%;
+    width: 600px;
     margin: 50px auto 0 !important;
+    border: 5px solid black;
     
 }
 
@@ -100,6 +103,10 @@ form {
 }
 
 @media (max-width: 1200px) {
+    h2 {
+        width: 80%;
+    }
+    
     div {
         flex-direction: column;
         align-items: center;
