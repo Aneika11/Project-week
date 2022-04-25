@@ -1,7 +1,15 @@
 header{
     text-align: center;
 }
+body{
+    font-family: 'Acme', sans-serif !important ;
+    word-spacing:  3px !important;
+    background: linear-gradient(90deg,#747272,#b6aeae,silver);
+}
 
+#nav:hover {
+    background-color: red !important;
+}
 
 figure{   
     display: flex;
@@ -12,9 +20,36 @@ figure{
 figure div{
     display: flex;
     flex-direction:column;
-    align-items:center;
+    
+}
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
 }
 
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.revealtwo{
+  position: relative;
+  transform: translateX(-1000px);
+  opacity: 0;
+  transition: 1s all ease;
+  display: none;
+}
+
+.revealtwo.active{
+  transform: translateX(0);
+  opacity: 1;
+  display: block;
+}
+.revealtwo img{
+    width:400px !important;
+}
 figure div img{
     width:700px;
     margin: 20px 0px;
@@ -24,42 +59,51 @@ figure div p{
 }
 
 section{
-    display: grid;
+    display: flex;
+    flex-direction:column;
+}
+
+section h1{
+    text-align: center;
 }
 #journey-grid{
     margin: auto;
-    grid-gap: 10px;
-    grid-template-rows: repeat(5,1fr);
+    display: flex;
+    flex-direction:column;
     
 }
-section div div img{
+#journey-grid div img{
     width:300px;
 }
-section div div p{
+#journey-grid div p{
     padding: 20px;
 }
-section div div{
+#journey-grid div{
     display: flex;
     padding: 20px;
     width:950px;
 }
 
 @media (max-width: 1010px){
-    section div div{
+    #journey-grid div{
     width:700px;
     }
 }
 
 @media (max-width: 800px){
-    section div div{
+    #journey-grid div{
         flex-direction:column;
         width:400px;
         align-items:center;
     }
+    #journey-grid{
+        --webkit-justify-items: center;
+        justify-items: center;
+    }
 }
 
 @media (max-width: 720px){
-    section div div{
+    #journey-grid div{
         flex-direction:column;
         width:400px;
         align-items:center;
@@ -67,9 +111,15 @@ section div div{
     figure div img{
     width:400px;
     }
+    section h1{
+    padding: 0 20px;
+    }
+    .revealtwo img{
+        width:300px !important;
+    }
 }
 @media (max-width: 530px){
-    section div div{
+    #journey-grid div{
         flex-direction:column;
         width:300px;
         align-items:center;
@@ -80,6 +130,6 @@ section div div{
     width:300px;
     }
     figure div p{
-    width:300px;
-}
+        width:300px;
+    }
 }
