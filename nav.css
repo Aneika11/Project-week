@@ -8,7 +8,9 @@ body nav {
     top: 0;
     font-family: 'Oswald', sans-serif;
 }
-
+#nav{
+    z-index: 5 !important;
+}
 #navbarNavDropdown{
     width:100px;
     justify-content: flex-end;

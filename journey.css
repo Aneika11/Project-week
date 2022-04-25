@@ -4,6 +4,7 @@ header{
 body{
     font-family: 'Acme', sans-serif !important ;
     word-spacing:  3px !important;
+    background: linear-gradient(90deg,#747272,#b6aeae,silver);
 }
 
 #nav:hover {
@@ -21,25 +22,33 @@ figure div{
     flex-direction:column;
     
 }
-figure div:nth-child(1){
-    transform: translate(-1000px, 0px);
-    align-items:center;
-    animation:slidin 5s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-    z-index: -10;
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
 }
-figure div:nth-child(2){
-    transform: translate(-1000px, 0px);
-    align-items:center;
-    animation:slidin 5s;
-    animation-delay: 5s;
-    animation-fill-mode: forwards;
-    z-index: -10;
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
 }
-@keyframes slidin{
-    from{transform: translate(-1000px, 0px);}
-    to{transform: translate(0px, 0px);}
+
+.revealtwo{
+  position: relative;
+  transform: translateX(-1000px);
+  opacity: 0;
+  transition: 1s all ease;
+  display: none;
+}
+
+.revealtwo.active{
+  transform: translateX(0);
+  opacity: 1;
+  display: block;
+}
+.revealtwo img{
+    width:400px !important;
 }
 figure div img{
     width:700px;
@@ -104,7 +113,10 @@ section h1{
     }
     section h1{
     padding: 0 20px;
-}
+    }
+    .revealtwo img{
+        width:300px !important;
+    }
 }
 @media (max-width: 530px){
     #journey-grid div{
