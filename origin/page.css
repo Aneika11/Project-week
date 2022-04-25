@@ -109,3 +109,16 @@ background: linear-gradient(90deg, rgba(26,84,120,1) 0%, rgba(0,0,0,1) 36%, rgba
 #holder{
     margin-right:40px;
 }
+.revealtwo{
+  position: relative;
+  transform: translateX(-1000px);
+  opacity: 0;
+  transition: 1s all ease;
+  display: none;
+}
+
+.revealtwo.active{
+  transform: translateX(0);
+  opacity: 1;
+  display: block;
+}
