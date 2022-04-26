@@ -11,11 +11,13 @@
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
   var revealtwo =document.querySelectorAll(".revealtwo");
+  var revealthree =document.querySelectorAll(".revealthree");
+  
   
   for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
+    let windowHeight = window.innerHeight;
+    let elementTop = reveals[i].getBoundingClientRect().top;
+    let elementVisible = 150;
     if (elementTop < windowHeight - elementVisible) {
       reveals[i].classList.add("active");
     } else {
@@ -24,13 +26,23 @@ function reveal() {
   }
   
   for (var i = 0; i < revealtwo.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = revealtwo[i].getBoundingClientRect().top;
-    var elementVisible = 150;
+    let windowHeight = window.innerHeight;
+    let elementTop = revealtwo[i].getBoundingClientRect().top;
+    let elementVisible = 150;
     if (elementTop < windowHeight - elementVisible) {
       revealtwo[i].classList.add("active");
     } else {
       revealtwo[i].classList.remove("active");
+    }
+  }
+  for (var i = 0; i < revealthree.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = revealthree[i].getBoundingClientRect().top;
+    var elementVisible = 300;
+    if (elementTop < windowHeight - elementVisible) {
+      revealthree[i].classList.add("active");
+    } else {
+      revealthree[i].classList.remove("active");
     }
   }
 }

@@ -5,8 +5,13 @@ body{
     font-family: 'Acme', sans-serif !important ;
     word-spacing:  3px !important;
     background: linear-gradient(90deg,#747272,#b6aeae,silver);
+    animation:backgroundcolor 2s infinite LINEAR;
 }
-
+@keyframes backgroundcolor{
+    0%{background: linear-gradient(90deg,#747272,#b6aeae,silver);}
+    50%{background: linear-gradient(90deg,#b6aeae,silver, #747272);}
+    100%{background: linear-gradient(90deg,silver,#747272,#b6aeae);}
+}
 #nav:hover {
     background-color: red !important;
 }
@@ -83,7 +88,18 @@ section h1{
     padding: 20px;
     width:950px;
 }
+article h1{
+    margin: 30px 90px
+}
+.revealthree{
+  position: relative;
+  opacity: 0;
+  transition: 1s all ease;
+}
 
+.revealthree.active{
+  opacity: 1;
+}
 @media (max-width: 1010px){
     #journey-grid div{
     width:700px;
