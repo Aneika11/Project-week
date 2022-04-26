@@ -17,7 +17,8 @@ header h1{
 }
 section{
     display: flex;
-    justify-content:center;
+    flex-direction:column;
+    align-items:center;
 }
 #section-one{
     margin:20px 0;
@@ -31,6 +32,34 @@ section{
     justify-content:center;
     align-items:center;
 }
-@media (min-width: 500px){
+section div{
+    display: flex;
+    margin:40px 0;
+}
+section div p{
+    padding: 20px;
+    width:400px;
+}
+section div img{
+    width: 400px;
+}
+.revealtwo{
+  position: relative;
+  transform: translateX(-1000px);
+  opacity: 0;
+  transition: 1s all ease;
+  
+}
 
+.revealtwo.active{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+@media (max-width: 700px){
+    section div{
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+    }
 }
