@@ -2,8 +2,6 @@ header{
     text-align: center;
 }
 body{
-    font-family: 'Acme', sans-serif !important ;
-    word-spacing:  3px !important;
     background: linear-gradient(90deg,#747272,#b6aeae,silver);
     animation:backgroundcolor 2s infinite LINEAR;
 }
