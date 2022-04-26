@@ -1,3 +1,7 @@
+.navbar {
+    z-index: 5;
+}
+
 header{
     display:flex;
     flex-direction:column;
@@ -5,48 +9,75 @@ header{
     margin:40px;
 }
 
-section{
-    display: flex;
-    flex-direction:column;
-    align-items:center;
-}
-section div{
-    display: flex;
-    margin:20px 0px;
-}
-section div img{
-    border-radius: 50%;
-}
-section div div{
-    width:700px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;   
-    padding:0 20px;
+.group-photo {
+    width: 1200px;
+    margin-top: 40px;
 }
 
+.img-div {
+    display: flex;
+    justify-content:center;
+    align-content: center;
+}
 
-@media screen and (max-width: 1060px){
-    section div div{
-        width:500px;
-        padding: 0 0 0 20px;
+body {
+    background-color: #9d7269 !important;
+}
+
+section {
+    background-color: #9d7269;
+    position: relative;
+    bottom: 120px;
+    margin: 0 auto 40px;
+    width: 800px;
+    padding: 10px 0;
+}
+
+#carouselExampleControls {
+    width: 600px;
+    margin: auto;
+}
+
+#carouselExampleControls p {
+    font-size: 15px;
+    position: absolute;
+    left: 220px;
+    top:10px;
+    width:300px;
+}
+
+#carouselExampleControls img {
+    width: 200px !important;
+}
+
+#xd {
+    background-color: grey;
+}
+
+@media only screen and (max-width: 1200px) {
+    .group-photo {
+        width: 100%;
     }
     
-}
-@media screen and (max-width: 860px){
-    section div{
-        flex-direction: column;
-        align-items:center;
-        margin:20px 0px;
+    #carouselExampleControls p {
+        padding-top: 20px;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    
+    #carouselExampleControls {
+        width: 200px;
+        align-items: center;
+    }
+    
+    section {
+        width: 80%;
     }
 }
-@media screen and (max-width: 630px){
-    #pic-of-all{
-        width:100%;
-    }
-    section div div{
-        width:300px;
-        padding: 0;
+
+@media only screen and (max-width: 815px) {
+    section {
+        bottom: 0;
     }
 }
