@@ -6,14 +6,23 @@ body{
     animation:backgroundcolor 2s infinite LINEAR;
 }
 @keyframes backgroundcolor{
-    0%{background: linear-gradient(90deg,#747272,#b6aeae,silver);}
-    50%{background: linear-gradient(90deg,#b6aeae,silver, #747272);}
-    100%{background: linear-gradient(90deg,silver,#747272,#b6aeae);}
-}
-#nav:hover {
-    background-color: red !important;
+    0%{background: linear-gradient(90deg,#747272,#747272,#b6aeae,#b6aeae,silver,silver,#b6aeae,#b6aeae);}
+    12.5%{background: linear-gradient(90deg,#747272,#b6aeae,#b6aeae,silver,silver,#b6aeae,#b6aeae, #747272);}
+    25%{background: linear-gradient(90deg,#b6aeae,#b6aeae,silver,silver,#b6aeae,#b6aeae, #747272,#747272);}
+    37.5%{background: linear-gradient(90deg,#b6aeae,silver,silver,#b6aeae,#b6aeae,#747272,#747272,#b6aeae);}
+    50%{background: linear-gradient(90deg,silver,silver,#b6aeae,#b6aeae,#747272,#747272,#b6aeae,#b6aeae);}
+    62.5%{background: linear-gradient(90deg,silver,#b6aeae,#b6aeae,#747272,#747272,#b6aeae,#b6aeae,silver);}
+    75%{background: linear-gradient(90deg,#b6aeae,#b6aeae,#747272,#747272,#b6aeae,#b6aeae,silver,silver);}
+    87.5%{background: linear-gradient(90deg,#b6aeae,#747272,#747272,#b6aeae,#b6aeae,silver,silver,#b6aeae);}
+    100%{background: linear-gradient(90deg,#747272,#747272,#b6aeae,#b6aeae,silver,silver,#b6aeae,#b6aeae);}
+
 }
 
+#nav{
+    z-index: 20 !important;
+    background-color: #9D7269 !important;
+    color:white;
+}
 figure{   
     display: flex;
     flex-direction:column;
@@ -47,6 +56,7 @@ figure div{
 .revealtwo.active{
   transform: translateX(0);
   opacity: 1;
+  
 }
 .revealtwo img{
     width:400px !important;
@@ -72,6 +82,7 @@ section h1{
     display: flex;
     flex-direction:column;
     
+    
 }
 #journey-grid div img{
     width:300px;
@@ -80,9 +91,12 @@ section h1{
     padding: 20px;
 }
 #journey-grid div{
+    background-color: #6e6e6e;
     display: flex;
     padding: 20px;
     width:950px;
+    margin: 30px 0;
+    border-radius: 30px;
 }
 article h1{
     margin: 30px 90px
@@ -112,6 +126,9 @@ article h1{
         --webkit-justify-items: center;
         justify-items: center;
     }
+    .revealtwo img{
+        width:100% !important;
+    }
 }
 
 @media (max-width: 720px){
@@ -125,9 +142,6 @@ article h1{
     }
     section h1{
     padding: 0 20px;
-    }
-    .revealtwo img{
-        width:300px !important;
     }
 }
 @media (max-width: 530px){

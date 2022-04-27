@@ -10,8 +10,10 @@ body nav {
     top: 0;
     font-family: 'Oswald', sans-serif;
 }
-#nav{
-    z-index: 5 !important;
+.navbar{
+    z-index: 20 !important;
+    background-color: #9D7269 !important;
+    color:white;
 }
 #navbarNavDropdown{
     width:100px;
