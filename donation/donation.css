@@ -29,11 +29,6 @@ body {
     background-size: contain;
 }
 
-#nav {
-    background-color: #3b7bff !important;
-    z-index: 5;
-}
-
 .Dbox {
     display: flex;
     padding: 50px;
