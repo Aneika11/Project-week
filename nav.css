@@ -11,7 +11,7 @@ body nav {
     font-family: 'Oswald', sans-serif;
 }
 #nav{
-    z-index: 5 !important;
+    z-index: 20 !important;
 }
 #navbarNavDropdown{
     width:100px;
