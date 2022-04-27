@@ -18,10 +18,11 @@ body{
 
 }
 
-#nav:hover {
-    background-color: red !important;
+#nav{
+    z-index: 20 !important;
+    background-color: #9D7269 !important;
+    color:white;
 }
-
 figure{   
     display: flex;
     flex-direction:column;

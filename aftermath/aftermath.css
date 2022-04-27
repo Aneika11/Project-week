@@ -14,8 +14,10 @@ body{
     100%{background: linear-gradient(90deg,#4374b0,#4374b0,#658ebf,#658ebf,#86acd9,#86acd9,#658ebf,#658ebf);}
 
 }
-.navbar{
-    z-index: 20;
+#nav{
+    z-index: 20 !important;
+    background-color: #9D7269 !important;
+    color:white;
 }
 header{
     background-image: url(https://foreignpolicy.com/wp-content/uploads/2016/12/gettyimages-75710241.jpg?w=800&h=383&quality=90);
