@@ -1,5 +1,21 @@
 body{
-    background: linear-gradient(20deg,#ba8e00,#fffb00,#fffb00);
+    background: linear-gradient(90deg,#4374b0,#4374b0,#658ebf,#658ebf,#86acd9,#86acd9,#658ebf,#658ebf);
+    animation:backgroundcolor 2s infinite LINEAR;
+}
+@keyframes backgroundcolor{
+    0%{background: linear-gradient(90deg,#4374b0,#4374b0,#658ebf,#658ebf,#86acd9,#86acd9,#658ebf,#658ebf);}
+    12.5%{background: linear-gradient(90deg,#4374b0,#658ebf,#658ebf,#86acd9,#86acd9,#658ebf,#658ebf, #4374b0);}
+    25%{background: linear-gradient(90deg,#658ebf,#658ebf,#86acd9,#86acd9,#658ebf,#658ebf, #4374b0,#4374b0);}
+    37.5%{background: linear-gradient(90deg,#658ebf,#86acd9,#86acd9,#658ebf,#658ebf,#4374b0,#4374b0,#658ebf);}
+    50%{background: linear-gradient(90deg,#86acd9,#86acd9,#658ebf,#658ebf,#4374b0,#4374b0,#658ebf,#658ebf);}
+    62.5%{background: linear-gradient(90deg,#86acd9,#658ebf,#658ebf,#4374b0,#4374b0,#658ebf,#658ebf,#86acd9);}
+    75%{background: linear-gradient(90deg,#658ebf,#658ebf,#4374b0,#4374b0,#658ebf,#658ebf,#86acd9,#86acd9);}
+    87.5%{background: linear-gradient(90deg,#658ebf,#4374b0,#4374b0,#658ebf,#658ebf,#86acd9,#86acd9,#658ebf);}
+    100%{background: linear-gradient(90deg,#4374b0,#4374b0,#658ebf,#658ebf,#86acd9,#86acd9,#658ebf,#658ebf);}
+
+}
+.navbar{
+    z-index: 20;
 }
 header{
     background-image: url(https://foreignpolicy.com/wp-content/uploads/2016/12/gettyimages-75710241.jpg?w=800&h=383&quality=90);
@@ -35,6 +51,9 @@ section{
 section div{
     display: flex;
     margin:40px 0;
+    background-color:#7aadff;
+    padding: 20px;
+    border-radius: 20px;
 }
 section div p{
     padding: 20px;
@@ -56,10 +75,21 @@ section div img{
   opacity: 1;
 }
 
-@media (max-width: 700px){
+@media (max-width: 850px){
     section div{
         flex-direction:column;
         align-items:center;
         justify-content:center;
+    }
+}
+@media (max-width: 500px){
+    section div{
+        width:350px;
+    }
+    section div img{
+        width:100%;
+    }
+    section div p{
+        width:100%;
     }
 }
